@@ -27,10 +27,6 @@ aliases:
 C#, .Net Framework, .Net Core, ASP.NET Core, Entity Framework, Web API, Postgres SQL, Rabbit MQ, Redis, MongoDB,
 Docker, MediatR, CQRS, SignalR, RESTful APIs, DDD, TDD, Git, Gitlab CI/CD, Unit Testing, Scrum, Agile.
 
-# 🚀Personal Projects
-* [[LucyAlert]] - easily create posters about lost or found cats and dogs and post them to your social media.
-* various code and no-code solutions for psychology in CBT
-
 #  👨‍💻Career Summary
 ## .Net back-end developer | Nov 2019 - Present | Complevo Gmbh [complevo.de](https://complevo.de/)
 

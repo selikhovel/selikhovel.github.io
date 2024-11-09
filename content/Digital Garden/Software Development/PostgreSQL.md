@@ -1,1 +1,0 @@
-* Good article about using UUID as Primary key [Maciej Walkowiak | PostgreSQL and UUID as primary key](https://maciejwalkowiak.com/blog/postgres-uuid-primary-key/)
