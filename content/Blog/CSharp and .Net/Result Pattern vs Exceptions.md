@@ -152,6 +152,9 @@ https://github.com/louthy/language-ext - as a part of a big library of functiona
 
 [[https://www.reddit.com/r/dotnet/comments/14tfpze/result_pattern_languageext_vs_functionalextensions/ | See comparison discussion on Reddit ]]
 ## References
+
+https://andrewlock.net/series/working-with-the-result-pattern/
+
 https://www.youtube.com/watch?v=E3dU9Y1CsnI
 
 https://www.youtube.com/watch?v=C_u1WottRA0

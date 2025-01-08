@@ -1,0 +1,1 @@
+The small guide how to setup Obsidian and publish it on github pages using Quartz
