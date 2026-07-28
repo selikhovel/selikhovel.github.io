@@ -32,10 +32,14 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      # Must run before the type check: quartz/components/Head.tsx imports the
+      # generated .quartz/plugins barrel, so tsc fails without it.
+      - name: Link plugins
+        run: npm run install-plugins
+
       - name: Check formatting and types
         run: npm run check
 
-      # Runs prebuild -> scripts/link-plugins.mts, then quartz build.
       - name: Build site
         run: npm run build
 
