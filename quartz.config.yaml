@@ -145,8 +145,14 @@ plugins:
     enabled: true
   - source: ./node_modules/@quartz-community/content-page
     enabled: true
+  # Every section needs a real index.md note: content-page refuses slugs ending
+  # in /index, so section pages exist only through this plugin. The note also
+  # avoids the double-rendered listing that its virtual pages produce.
   - source: ./node_modules/@quartz-community/folder-page
     enabled: true
+    options:
+      showFolderCount: false
+      showSubfolders: false
   - source: ./node_modules/@quartz-community/tag-page
     enabled: true
 
@@ -199,12 +205,10 @@ plugins:
       position: beforeBody
       priority: 10
       condition: not-index
+  # Disabled: it can hide the reading time but not the date, and the dates on
+  # these pages carry no useful signal.
   - source: ./node_modules/@quartz-community/content-meta
-    enabled: true
-    layout:
-      position: beforeBody
-      priority: 20
-      condition: not-index
+    enabled: false
   - source: ./node_modules/@quartz-community/tag-list
     enabled: true
     layout:
@@ -228,12 +232,9 @@ plugins:
       position: left
       priority: 35
       group: toolbar
+  # Disabled: on a two-level site "Home > blog" repeats the nav directly above it.
   - source: ./node_modules/@quartz-community/breadcrumbs
-    enabled: true
-    layout:
-      position: beforeBody
-      priority: 5
-      condition: not-index
+    enabled: false
   - source: ./node_modules/@quartz-community/footer
     enabled: true
     options:
