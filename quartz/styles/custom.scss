@@ -4,6 +4,27 @@
 // built page with print media emulation. Everything that is navigation rather
 // than content is dropped, and the layout is flattened to a single column so
 // the PDF reads like a document instead of a screenshot of a website.
+// Portrait in the CV header. Shown on the page, dropped from the PDF — the
+// printed CV goes into applicant tracking systems, where a photo adds weight
+// without adding information.
+.cv-avatar {
+  float: right;
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 0 1rem 1.5rem;
+  shape-outside: circle();
+}
+
+@media (max-width: 600px) {
+  .cv-avatar {
+    float: none;
+    display: block;
+    margin: 0 0 1rem 0;
+  }
+}
+
 @media print {
   // Quartz colours everything through custom properties, so overriding
   // `color` on the body alone leaves headings and metadata in their light
@@ -32,6 +53,7 @@
   footer,
   #quartz-body > .left,
   #quartz-body > .right,
+  .cv-avatar,
   .no-print {
     display: none !important;
   }

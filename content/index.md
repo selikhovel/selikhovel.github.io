@@ -3,6 +3,8 @@ title: Senior .NET Backend Engineer in Berlin
 description: Eugene Selikhov — Senior Backend Engineer in Berlin with 10+ years in .NET. Domain-driven design, event-driven architecture and greenfield platforms for Colliers, Mercedes-Benz and fintech.
 ---
 
+<img class="cv-avatar" src="avatar.webp" alt="Portrait of Eugene Selikhov" width="128" height="128" />
+
 # Eugene Selikhov
 
 **Senior Backend Engineer** · Berlin, Germany · German citizen — no work permit required · Open to relocation
