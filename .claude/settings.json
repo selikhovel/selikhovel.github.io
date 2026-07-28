@@ -1,0 +1,17 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node .claude/hooks/publish-zone-check.mjs",
+            "statusMessage": "Checking publish zone",
+            "timeout": 15
+          }
+        ]
+      }
+    ]
+  }
+}
