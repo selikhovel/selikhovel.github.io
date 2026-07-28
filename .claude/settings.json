@@ -12,6 +12,29 @@
           }
         ]
       }
+    ],
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node .claude/hooks/capture-rules.mjs start",
+            "timeout": 15
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node .claude/hooks/capture-rules.mjs stop",
+            "statusMessage": "Checking whether anything should be written down",
+            "timeout": 20
+          }
+        ]
+      }
     ]
   }
 }
