@@ -1,3 +1,12 @@
+---
+title: Result Pattern vs Exceptions in C#
+description: When to reach for the Result pattern instead of exceptions in .NET, how to implement it in C#, and what it actually costs.
+tags:
+  - csharp
+  - dotnet
+  - architecture
+---
+
 In recent years, the Result pattern has gained popularity as an alternative approach of managing error cases, particularly in languages like F#, Go and Rust, and is now increasingly applied in C# applications. In this article I would like to explore the Result pattern, discuss its implementations, and compare it with the traditional exception-based error handling in .NET C#.
 ## What's the problem with a good old exception?
 

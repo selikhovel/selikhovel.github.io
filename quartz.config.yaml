@@ -1,0 +1,256 @@
+# yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
+configuration:
+  pageTitle: Eugene Selikhov
+  # Appended to every page's <title>. The CV page sets a role-first frontmatter
+  # title so the tab reads "Senior .NET Backend Engineer | Berlin · Eugene Selikhov".
+  pageTitleSuffix: " · Eugene Selikhov"
+  enableSPA: true
+  enablePopovers: true
+  # Set to a umami/goatcounter websiteId once the account exists. Leaving a
+  # provider configured without an id only ships a script that never reports.
+  analytics: null
+  locale: en-US
+  # No protocol and no trailing slash. Quartz builds absolute URLs as
+  # `https://${baseUrl}`, so a protocol here corrupts every sitemap entry,
+  # canonical and og:image on the site.
+  baseUrl: selikhovel.github.io
+  ignorePatterns:
+    - private
+    - templates
+    - .obsidian
+  defaultDateType: modified
+  theme:
+    fontOrigin: googleFonts
+    cdnCaching: true
+    typography:
+      header: Schibsted Grotesk
+      body: Source Sans Pro
+      code: IBM Plex Mono
+    colors:
+      lightMode:
+        light: "#faf8f8"
+        lightgray: "#e5e5e5"
+        gray: "#b8b8b8"
+        darkgray: "#4e4e4e"
+        dark: "#2b2b2b"
+        secondary: "#284b63"
+        tertiary: "#84a59d"
+        highlight: rgba(143, 159, 169, 0.15)
+        textHighlight: "#fff23688"
+      darkMode:
+        light: "#161618"
+        lightgray: "#393639"
+        gray: "#646464"
+        darkgray: "#d4d4d4"
+        dark: "#ebebec"
+        secondary: "#7b97aa"
+        tertiary: "#84a59d"
+        highlight: rgba(143, 159, 169, 0.15)
+        textHighlight: "#b3aa0288"
+
+plugins:
+  # --- transformers ---
+  # Parses frontmatter. Quartz breaks without it, despite the name — the
+  # properties panel it can render is switched off here.
+  - source: ./node_modules/@quartz-community/note-properties
+    enabled: true
+    options:
+      hidePropertiesView: true
+      delimiters: "---"
+      language: yaml
+    order: 5
+  - source: ./node_modules/@quartz-community/created-modified-date
+    enabled: true
+    options:
+      priority:
+        - frontmatter
+        - git
+        - filesystem
+    order: 10
+  - source: ./node_modules/@quartz-community/syntax-highlighting
+    enabled: true
+    options:
+      theme:
+        light: github-light
+        dark: github-dark
+      keepBackground: false
+    order: 20
+  - source: ./node_modules/@quartz-community/obsidian-flavored-markdown
+    enabled: true
+    options:
+      enableInHtmlEmbed: false
+      enableCheckbox: true
+    order: 30
+  - source: ./node_modules/@quartz-community/github-flavored-markdown
+    enabled: true
+    order: 40
+  - source: ./node_modules/@quartz-community/table-of-contents
+    enabled: true
+    order: 50
+  - source: ./node_modules/@quartz-community/crawl-links
+    enabled: true
+    options:
+      markdownLinkResolution: shortest
+    order: 60
+  - source: ./node_modules/@quartz-community/description
+    enabled: true
+    order: 70
+  # Local plugin: rel=canonical everywhere + schema.org Person on the CV.
+  - source: ./plugins/seo
+    enabled: true
+    order: 75
+    options:
+      person:
+        name: Eugene Selikhov
+        jobTitle: Senior Backend Engineer
+        locality: Berlin
+        country: DE
+        worksFor: Colliers
+        sameAs:
+          - https://www.linkedin.com/in/selikhovevgenii/
+          - https://github.com/selikhovel/
+        knowsAbout:
+          - .NET
+          - C#
+          - ASP.NET Core
+          - Domain-Driven Design
+          - Event-Driven Architecture
+          - Microservices
+          - PostgreSQL
+          - Kafka
+        alumniOf:
+          - Kaliningrad State Technical University
+
+  # --- filters ---
+  # Unfinished notes stay in the vault but out of the build via `draft: true`.
+  - source: ./node_modules/@quartz-community/remove-draft
+    enabled: true
+
+  # --- emitters ---
+  - source: ./node_modules/@quartz-community/alias-redirects
+    enabled: true
+  - source: ./node_modules/@quartz-community/content-index
+    enabled: true
+    options:
+      enableSiteMap: true
+      enableRSS: false
+  - source: ./node_modules/@quartz-community/favicon
+    enabled: true
+  - source: ./node_modules/@quartz-community/og-image
+    enabled: true
+  - source: ./node_modules/@quartz-community/content-page
+    enabled: true
+  - source: ./node_modules/@quartz-community/folder-page
+    enabled: true
+  - source: ./node_modules/@quartz-community/tag-page
+    enabled: true
+
+  # --- layout components ---
+  # `condition: not-index` keeps the garden chrome off the CV, which is the
+  # page recruiters land on. Everything else keeps the full Quartz interface.
+  - source: ./node_modules/@quartz-community/explorer
+    enabled: true
+    layout:
+      position: left
+      priority: 50
+      condition: not-index
+  - source: ./node_modules/@quartz-community/graph
+    enabled: true
+    layout:
+      position: right
+      priority: 10
+      condition: not-index
+  - source: ./node_modules/@quartz-community/search
+    enabled: true
+    layout:
+      position: left
+      priority: 20
+      group: toolbar
+      groupOptions:
+        grow: true
+  # `has-backlinks` stops every page from advertising "No backlinks found".
+  - source: ./node_modules/@quartz-community/backlinks
+    enabled: true
+    layout:
+      position: right
+      priority: 30
+      condition: has-backlinks
+  - source: ./node_modules/@quartz-community/article-title
+    enabled: true
+    layout:
+      position: beforeBody
+      priority: 10
+      condition: not-index
+  - source: ./node_modules/@quartz-community/content-meta
+    enabled: true
+    layout:
+      position: beforeBody
+      priority: 20
+      condition: not-index
+  - source: ./node_modules/@quartz-community/tag-list
+    enabled: true
+    layout:
+      position: beforeBody
+      priority: 30
+      condition: has-tags
+  - source: ./node_modules/@quartz-community/page-title
+    enabled: true
+    layout:
+      position: left
+      priority: 10
+  - source: ./node_modules/@quartz-community/darkmode
+    enabled: true
+    layout:
+      position: left
+      priority: 30
+      group: toolbar
+  - source: ./node_modules/@quartz-community/reader-mode
+    enabled: true
+    layout:
+      position: left
+      priority: 35
+      group: toolbar
+  - source: ./node_modules/@quartz-community/breadcrumbs
+    enabled: true
+    layout:
+      position: beforeBody
+      priority: 5
+      condition: not-index
+  - source: ./node_modules/@quartz-community/footer
+    enabled: true
+    options:
+      links:
+        LinkedIn: https://www.linkedin.com/in/selikhovevgenii/
+        GitHub: https://github.com/selikhovel/
+  - source: ./node_modules/@quartz-community/spacer
+    enabled: true
+    options: {}
+    order: 25
+    layout:
+      position: left
+      priority: 25
+      display: mobile-only
+
+layout:
+  groups:
+    toolbar:
+      priority: 35
+      direction: row
+      gap: 0.5rem
+  byPageType:
+    "404":
+      positions:
+        beforeBody: []
+        left: []
+        right: []
+    content: {}
+    folder:
+      exclude:
+        - reader-mode
+      positions:
+        right: []
+    tag:
+      exclude:
+        - reader-mode
+      positions:
+        right: []

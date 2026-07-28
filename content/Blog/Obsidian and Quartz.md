@@ -1,1 +1,6 @@
-The small guide how to setup Obsidian and publish it on github pages using Quartz
+---
+title: Obsidian and Quartz
+draft: true
+---
+
+A small guide on how to set up Obsidian and publish it on GitHub Pages using Quartz.

@@ -1,3 +1,8 @@
-There is a list of helpful links for living in
+---
+title: Surviving in Germany
+draft: true
+---
 
-good git for living in berlin lifehacks https://marlonbernardes.github.io/awesome-berlin/en/
+A list of helpful links for living in Germany.
+
+- [Awesome Berlin](https://marlonbernardes.github.io/awesome-berlin/en/) — lifehacks for living in Berlin.
