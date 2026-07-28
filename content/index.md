@@ -86,10 +86,6 @@ Tech stack: C#, .NET Framework, MT4/MT5 plugins, WPF, SignalR, Rx.NET, C++/CLI i
 
 **English** — Professional working proficiency · **German** — Intermediate · **Russian** — Native
 
-## Writing
-
-- [Result Pattern vs Exceptions in C#](blog/csharp-dotnet/result-pattern-vs-exceptions) — when to reach for the Result pattern instead of exceptions in .NET, and what it actually costs.
-
 ## Education
 
 **Kaliningrad State Technical University** — Postgraduate Research, E-learning & Educational Assessment Tools, 2013–2014
