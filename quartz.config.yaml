@@ -105,6 +105,11 @@ plugins:
         jobTitle: Senior Backend Engineer
         locality: Berlin
         country: DE
+        nationality: German
+        knowsLanguage:
+          - English
+          - German
+          - Russian
         worksFor: Colliers
         sameAs:
           - https://www.linkedin.com/in/selikhovevgenii/

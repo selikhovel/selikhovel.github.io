@@ -5,7 +5,7 @@ description: Eugene Selikhov — Senior Backend Engineer in Berlin with 10+ year
 
 # Eugene Selikhov
 
-**Senior Backend Engineer** · Berlin, Germany · Open to relocation
+**Senior Backend Engineer** · Berlin, Germany · German citizen — no work permit required · Open to relocation
 
 [LinkedIn](https://www.linkedin.com/in/selikhovevgenii/) · [GitHub](https://github.com/selikhovel/)<span class="no-print"> · <a href="/cv.pdf" download>Download CV as PDF</a></span>
 
@@ -79,6 +79,10 @@ Tech stack: C#, .NET Framework, MT4/MT5 plugins, WPF, SignalR, Rx.NET, C++/CLI i
 *2013 – 2015*
 
 - Manufacturing execution system and a cross-platform governmental performance appraisal system.
+
+## Languages
+
+**English** — Professional working proficiency · **German** — Intermediate · **Russian** — Native
 
 ## Education
 

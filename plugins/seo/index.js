@@ -54,6 +54,10 @@ export const Seo = (opts = {}) => {
                         },
                       }
                     : {}),
+                  ...(person.nationality
+                    ? { nationality: { "@type": "Country", name: person.nationality } }
+                    : {}),
+                  ...(person.knowsLanguage ? { knowsLanguage: person.knowsLanguage } : {}),
                   ...(person.sameAs ? { sameAs: person.sameAs } : {}),
                   ...(person.knowsAbout ? { knowsAbout: person.knowsAbout } : {}),
                   ...(person.alumniOf
