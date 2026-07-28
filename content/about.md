@@ -1,7 +1,6 @@
 ---
 title: About
 description: Eugene Selikhov — a backend engineer in Berlin who works in complicated domains, from nuclear plant construction to global real estate, and is moving towards product engineering.
-draft: true
 ---
 
 I am a backend engineer in Berlin. For the last decade I have built systems for

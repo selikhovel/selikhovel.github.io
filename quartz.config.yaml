@@ -166,6 +166,7 @@ plugins:
     options:
       links:
         Home: /
+        About: about
         Blog: blog/
     layout:
       position: beforeBody
