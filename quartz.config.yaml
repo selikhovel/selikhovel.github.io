@@ -151,6 +151,19 @@ plugins:
     enabled: true
 
   # --- layout components ---
+  # Local plugin. The CV hides the explorer, which left every other section
+  # unreachable from the homepage — the blog post had no inbound internal link
+  # at all. Add Projects here once that section has something in it.
+  - source: ./plugins/nav
+    enabled: true
+    order: 5
+    options:
+      links:
+        Home: /
+        Blog: blog/
+    layout:
+      position: beforeBody
+      priority: 1
   # `condition: not-index` keeps the garden chrome off the CV, which is the
   # page recruiters land on. Everything else keeps the full Quartz interface.
   - source: ./node_modules/@quartz-community/explorer

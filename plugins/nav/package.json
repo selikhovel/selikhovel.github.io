@@ -1,0 +1,33 @@
+{
+  "name": "quartz-plugin-nav",
+  "version": "1.0.0",
+  "description": "Site-wide navigation bar.",
+  "type": "module",
+  "private": true,
+  "main": "index.js",
+  "exports": {
+    ".": {
+      "import": "./index.js"
+    },
+    "./components": {
+      "import": "./components/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "quartz": {
+    "name": "nav",
+    "displayName": "Navigation",
+    "category": "component",
+    "version": "1.0.0",
+    "quartzVersion": ">=5.0.0",
+    "defaultOrder": 5,
+    "defaultEnabled": true,
+    "components": {
+      "Nav": {
+        "displayName": "Navigation",
+        "defaultPosition": "beforeBody",
+        "defaultPriority": 1
+      }
+    }
+  }
+}
