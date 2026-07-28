@@ -1,38 +1,51 @@
-name: Deploy Quartz site to GitHub Pages
- 
+name: Deploy site to GitHub Pages
+
 on:
   push:
     branches:
-      - v4
- 
+      - main
+  workflow_dispatch:
+
 permissions:
   contents: read
   pages: write
   id-token: write
- 
+
 concurrency:
   group: "pages"
   cancel-in-progress: false
- 
+
 jobs:
   build:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 0 # Fetch all history for git info
+          # CreatedModifiedDate reads git history for page dates.
+          fetch-depth: 0
+
       - uses: actions/setup-node@v4
         with:
-          node-version: 22
-      - name: Install Dependencies
+          node-version-file: .node-version
+          cache: npm
+
+      - name: Install dependencies
         run: npm ci
-      - name: Build Quartz
-        run: npx quartz build
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+
+      - name: Check formatting and types
+        run: npm run check
+
+      # Runs prebuild -> scripts/link-plugins.mts, then quartz build.
+      - name: Build site
+        run: npm run build
+
+      - name: Render CV to PDF
+        run: npm run build:pdf
+
+      - uses: actions/upload-pages-artifact@v3
         with:
           path: public
- 
+
   deploy:
     needs: build
     environment:

@@ -1,3 +1,80 @@
 @use "./base.scss";
 
-// put your custom CSS here!
+// The CV is also rendered to PDF by scripts/build-pdf.mts, which prints the
+// built page with print media emulation. Everything that is navigation rather
+// than content is dropped, and the layout is flattened to a single column so
+// the PDF reads like a document instead of a screenshot of a website.
+@media print {
+  // Quartz colours everything through custom properties, so overriding
+  // `color` on the body alone leaves headings and metadata in their light
+  // on-screen greys — barely legible once printed. Re-point the palette at
+  // print-safe values instead.
+  //
+  // The theme palette is emitted after this stylesheet, and the dark variant
+  // is scoped to `:root[saved-theme="dark"]`, so these selectors are repeated
+  // to outrank it regardless of source order.
+  :root:root:root,
+  :root:root:root[saved-theme="dark"],
+  :root:root:root[saved-theme="light"] {
+    --light: #ffffff;
+    --lightgray: #d0d0d0;
+    --gray: #4a4a4a;
+    --darkgray: #1a1a1a;
+    --dark: #000000;
+    --secondary: #000000;
+    --tertiary: #333333;
+    --highlight: transparent;
+    --textHighlight: transparent;
+  }
+
+  .sidebar,
+  .page-footer,
+  footer,
+  #quartz-body > .left,
+  #quartz-body > .right,
+  .no-print {
+    display: none !important;
+  }
+
+  #quartz-body {
+    display: block !important;
+  }
+
+  .page > #quartz-body .center,
+  .page > #quartz-body .page-header {
+    margin: 0 !important;
+    padding: 0 !important;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+
+  body,
+  .page {
+    background: #fff !important;
+    color: #000 !important;
+  }
+
+  a {
+    color: #000 !important;
+    text-decoration: none;
+  }
+
+  // A section heading should not be orphaned at the foot of a page, and a
+  // single role should not be split across a page break.
+  h1,
+  h2,
+  h3 {
+    break-after: avoid-page;
+    page-break-after: avoid;
+  }
+
+  h3 + p,
+  li {
+    break-inside: avoid-page;
+    page-break-inside: avoid;
+  }
+
+  article {
+    font-size: 0.92rem;
+  }
+}

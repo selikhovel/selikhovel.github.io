@@ -7,7 +7,7 @@ description: Eugene Selikhov — Senior Backend Engineer in Berlin with 10+ year
 
 **Senior Backend Engineer** · Berlin, Germany · Open to relocation
 
-[LinkedIn](https://www.linkedin.com/in/selikhovevgenii/) · [GitHub](https://github.com/selikhovel/)
+[LinkedIn](https://www.linkedin.com/in/selikhovevgenii/) · [GitHub](https://github.com/selikhovel/)<span class="no-print"> · <a href="/cv.pdf" download>Download CV as PDF</a></span>
 
 ## Professional Summary
 
@@ -30,6 +30,7 @@ Senior Backend Engineer with 10+ years of experience turning complex business do
 ### Senior Backend Engineer — Colliers Global, Global Tech Hub
 
 *Jan 2026 – Present · internal transfer from Colliers International Germany*
+
 Tech stack: ASP.NET Core, .NET 10, Kafka, PostgreSQL
 
 - Founding engineer of the Global Tech Hub; led initial team setup, establishing engineering workflows, delivery processes and onboarding from the ground up.
@@ -40,6 +41,7 @@ Tech stack: ASP.NET Core, .NET 10, Kafka, PostgreSQL
 ### Senior Backend Engineer — Colliers International Germany
 
 *Apr 2025 – Dec 2025*
+
 Tech stack: .NET 9, ASP.NET Core, Azure, PostgreSQL, Docker, Terraform
 
 - Led backend development of a new enterprise analytics platform from scratch; owned the full backend architecture, domain model and database schema.
@@ -49,6 +51,7 @@ Tech stack: .NET 9, ASP.NET Core, Azure, PostgreSQL, Docker, Terraform
 ### Senior Backend Engineer — Complevo GmbH, Germany
 
 *Nov 2019 – Mar 2025 · Daimler / Mercedes-Benz*
+
 Tech stack: .NET Core, ASP.NET Core, EF Core, PostgreSQL, RabbitMQ, Docker, GitLab CI/CD
 
 - Developed event-driven backend services for a B2B fleet management platform serving 100,000+ customers across Europe and the US.
@@ -59,6 +62,7 @@ Tech stack: .NET Core, ASP.NET Core, EF Core, PostgreSQL, RabbitMQ, Docker, GitL
 ### Senior Backend Engineer — Broctagon Solutions Ltd.
 
 *Sep 2015 – Oct 2019 · Remote*
+
 Tech stack: C#, .NET Framework, MT4/MT5 plugins, WPF, SignalR, Rx.NET, C++/CLI interop, REST API, Angular, AWS
 
 - Built high-availability REST APIs for desktop, web and mobile trading apps achieving 99.99% uptime.

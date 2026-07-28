@@ -1,3 +1,8 @@
 public
 node_modules
 .quartz-cache
+.quartz
+docs
+# content/ is the Obsidian vault. Notes are written and synced from Obsidian,
+# so holding them to the repo's code formatting would fail CI on every note.
+content

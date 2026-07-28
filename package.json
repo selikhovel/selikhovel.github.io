@@ -20,7 +20,8 @@
     "profile": "0x -D prof ./quartz/bootstrap-cli.mjs build --concurrency=1",
     "install-plugins": "npx tsx ./scripts/link-plugins.mts",
     "prebuild": "npm run install-plugins",
-    "build": "npx quartz build"
+    "build": "npx quartz build",
+    "build:pdf": "npx tsx ./scripts/build-pdf.mts"
   },
   "engines": {
     "npm": ">=10.9.2",
@@ -137,6 +138,7 @@
     "@types/yargs": "^17.0.35",
     "esbuild": "^0.27.2",
     "prettier": "^3.8.1",
+    "puppeteer": "^25.4.0",
     "tsx": "^4.21.0",
     "typescript": "^5.9.3"
   }
