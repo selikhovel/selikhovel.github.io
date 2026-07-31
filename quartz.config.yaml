@@ -105,7 +105,9 @@ plugins:
         jobTitle: Senior Backend Engineer
         locality: Berlin
         country: DE
-        nationality: German
+        # Wrapped as schema.org Country by the seo plugin, so this has to be the
+        # name of a place. "EU citizen" is a status, not a country.
+        nationality: European Union
         knowsLanguage:
           - English
           - German
