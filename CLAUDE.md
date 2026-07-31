@@ -121,6 +121,19 @@ nav sits in `beforeBody` with priority 1 for this reason.
 an older `rehype-typst` than Quartz core, so installing it fails peer resolution.
 Nothing here uses maths.
 
+**The CV states its facts twice, and only one copy is visible.** Personal
+details — citizenship, job title, employer, languages, university — live both in
+`content/index.md` and, separately, in the `person` options of the `seo` plugin
+in this file, which emit the schema.org graph search engines read. Editing the
+page leaves the graph asserting the old fact, and the build is silent about the
+disagreement. Change both, then read the emitted JSON-LD back out of
+`public/index.html` rather than trusting the config.
+
+**Those `person` fields are typed, not free text.** `nationality` is wrapped as a
+schema.org `Country`, so its value has to name a place. A status put there ("EU
+citizen") emits a country by that name and nothing warns; the place name goes in
+the graph and the status belongs in the CV line instead.
+
 ### Styling
 
 **The theme palette is emitted after `custom.scss`.** Overriding a colour
