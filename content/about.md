@@ -1,18 +1,31 @@
 ---
-title: About
-description: Eugene Selikhov is a backend engineer in Berlin who works in complicated domains, from nuclear plant construction to global real estate, and is moving towards product engineering.
+title: Senior backend engineer moving into product
+description: Eugene Selikhov is a senior backend engineer in Berlin, ten years into hard domains from nuclear plant construction to global real estate, and moving towards product engineering.
 ---
 
-I am a backend engineer in Berlin, currently the founding engineer of a new
-global technology hub at Colliers. For the last decade I have built systems for
-industries that are difficult to model: plant construction and radioactive waste
-control, trading platforms, vehicle catalogues for Daimler, and now global real
-estate data.
+I am a senior backend engineer in Berlin, ten years in, and increasingly a
+product engineer as well. Right now I am the founding engineer of a new global
+technology hub at Colliers, where the work is the domain model, the team and the
+hiring bar rather than only the services behind them.
 
-The list looks scattered until you notice what those domains have in common.
-None of them are hard because of the code.
+For the last decade I have built systems for industries that are difficult to
+model: plant construction and radioactive waste control, trading platforms,
+vehicle catalogues for Daimler, and now global real estate. The list looks
+scattered until you notice what those domains have in common. None of them are
+hard because of the code.
 
-This page is the long version: how I got from a technical university in
+Which is why the direction I am moving in is not a change of field. Sitting with
+a business, working out what should exist, and being answerable for whether it
+was worth building is the part of this job I have always been drawn to. I first
+did it in 2016, with the owners of a trading company in Singapore, several years
+before I had a name for it.
+
+What I want next is a role where the domain is mine to own and the product
+responsibility comes with it. That can be an enterprise product or a small team
+building something from nothing, and the pull towards the smaller end of that
+range has been getting stronger.
+
+What follows is the long version: how I got from a technical university in
 Kaliningrad to here, and what each of those places taught me. The short version
 is on [my CV](/).
 
@@ -422,11 +435,21 @@ One is what I do now. Enterprise products, in domains conservative enough that a
 great deal is still worth fixing. Real estate has turned out to be exactly that:
 old, careful, and full of things nobody has got to yet.
 
-The other is much smaller. I think one person can now cover the entire cycle for
-a small business or a narrow niche: gather the requirements, decide what is
-worth building, and ship it. Most of the mechanical work can be automated, and
-what remains is the product judgement. That is the direction I take my own side
-projects in, and I expect it to become unremarkable rather than impressive.
+The other is much smaller, and it is the one I keep coming back to. I think one
+person can now cover the entire cycle for a small business or a narrow niche:
+work out what they actually need, decide what is worth building, and ship it.
+Most of the mechanical work can be automated, and what remains is the product
+judgement.
+
+The work I have in mind is deliberately unglamorous. Integrations and process
+automation for small firms and sole traders, the sort of thing nobody has got
+round to because it was never worth a team's time and a licence. It is worth one
+person's time now, which is a genuinely new fact about this trade and one I
+expect to become unremarkable rather than impressive.
+
+I have not shipped anything of my own yet, and I would rather say so than imply
+otherwise. What exists is a direction, some experiments, and one idea I keep
+returning to, which is at the end of this page.
 
 Neither of them feels like a change of direction. It is closer to the thing I
 picked when I chose a degree that put economics next to software, and to what I
@@ -440,9 +463,13 @@ I am a father, and my family comes first. Berlin has been home for years now.
 Away from work I read a great deal of psychology. It began as a personal
 interest and stayed one, though the distance between it and the rest of this
 page is smaller than it looks. Most of what I have written above is about people
-and the knowledge they carry without ever writing it down. In time I would like
-to build something in that field: tools for therapists, and for the people who
-go to see them.
+and the knowledge they carry without ever writing it down.
+
+This is the idea I keep returning to. Tools for therapists, and for the people
+who go to see them: a small, careful niche that needs somebody who understands
+both halves of it, and one where a single person can still build the whole
+thing. It is the direction described further up this page, pointed at the field
+I would most want to spend my own time on. Nothing is built yet.
 
 The rest of my attention goes to the shift this page describes. Moving from
 writing code towards business analysis and product work means learning a
