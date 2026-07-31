@@ -1,6 +1,6 @@
 ---
 title: About
-description: Eugene Selikhov — a backend engineer in Berlin who works in complicated domains, from nuclear plant construction to global real estate, and is moving towards product engineering.
+description: Eugene Selikhov is a backend engineer in Berlin who works in complicated domains, from nuclear plant construction to global real estate, and is moving towards product engineering.
 ---
 
 I am a backend engineer in Berlin, currently the founding engineer of a new
@@ -12,14 +12,14 @@ estate data.
 The list looks scattered until you notice what those domains have in common.
 None of them are hard because of the code.
 
-This page is the long version — how I got from a technical university in
+This page is the long version: how I got from a technical university in
 Kaliningrad to here, and what each of those places taught me. The short version
 is on [my CV](/).
 
 ## Where this started
 
 I wanted to write software before I had much idea what the job actually
-involved. What settled it was the people around me — several of them worked in
+involved. What settled it was the people around me. Several of them worked in
 IT, and watching them made it obvious that this was both interesting and going
 somewhere. There was no dramatic moment. The choice was made early and never
 seriously revisited.
@@ -27,13 +27,13 @@ seriously revisited.
 What I did revisit was which kind of IT. I read applied information technology
 in economics rather than computer science, and that was deliberate. Technology
 on its own has never held my attention for long; what holds it is technology
-applied to a business — the point where a company's real problem meets something
-you can build. I have spent my whole career on that boundary, and it started
-with choosing the degree.
+applied to a business, at the point where a company's real problem meets
+something you can build. I have spent my whole career on that boundary, and it
+started with choosing the degree.
 
 The course that mattered most was systems analysis, and it was a large one. It
 was the first time anyone showed me that a complicated system is not simply
-difficult — that it has a structure, and that the structure can be taken apart,
+difficult, that it has a structure, and that the structure can be taken apart,
 modelled and reasoned about. That turned out to be the most durable thing I
 learned. When something is too large to hold in your head, decompose it and find
 where the boundaries actually are. Nothing about it was specific to software,
@@ -43,23 +43,23 @@ I stayed on afterwards for postgraduate research on e-learning and assessment
 tools, and took a job as a developer at the same time. For a year the two ran in
 parallel, which is the most useful thing that could have happened: I was not
 choosing between a career and an idea of one, I was choosing between two things
-I was already doing. Applied work — with a business, on a product, on a
-deadline — held me in a way the research never quite did. I left the
-postgraduate work unfinished and went into the industry on purpose, rather than
-drifting out of academia by default.
+I was already doing. Applied work, the kind with a business and a product and a
+deadline, held me in a way the research never quite did. I left the postgraduate
+work unfinished and went into the industry on purpose, rather than drifting out
+of academia by default.
 
 What the research left me with was the method rather than the title: how to work
 on a problem nobody has already solved for you, how to read deeply into
 unfamiliar material before having an opinion about it, how to keep a project
 moving over months. I have used that more than I would have used the degree.
 
-The university gave me the rest of it sideways — the people I met, small student
+The university gave me the rest of it sideways: the people I met, small student
 projects and startups, the first paid work. Mostly it showed me how wide the
 field is, and that there was no single track I was supposed to be on.
 
 ## The first system I could not see the whole of
 
-My first paid work was small and ordinary — a manufacturing execution system, a
+My first paid work was small and ordinary: a manufacturing execution system, a
 governmental appraisal tool, desktop software. Useful, but the kind of thing one
 person can hold entirely in their head.
 
@@ -75,8 +75,8 @@ Enterprise systems for power plant construction, and for decommissioning
 facilities and tracking radioactive waste. Planning measured in years, a domain
 model far too large for any one person to carry, developers everywhere. Until
 then I had always been able to see the whole of what I was building. Here I
-could not, and learning to work well anyway — on your own part, against a model
-somebody else owns, without breaking things you cannot see — is a skill I have
+could not, and learning to work well anyway, on your own part, against a model
+somebody else owns, without breaking things you cannot see, is a skill I have
 used on every large system since.
 
 It was also the first tightly regulated domain I worked in, and the first where
@@ -84,7 +84,7 @@ the details were not up for negotiation. When rules arrive from outside the
 company and the cost of getting them wrong is measured in something other than
 money, you cannot simplify the domain to suit the software. You have to go and
 learn it, properly, from people who have spent their careers on it. That is
-where the habit started — the one this entire page is really about. The
+where the habit started, the one this entire page is really about. The
 interesting part of the problem was never the C#.
 
 I owe that period a good deal more than the line it takes up on a CV. It is
@@ -98,14 +98,14 @@ I left earlier than I would have chosen. 2015 brought a structural crisis to the
 industry and to the economy around it, and it was clear enough where that was
 going. It also brought forward something I wanted anyway. I had always intended
 to work on international projects rather than domestic ones, in English, and
-remote work for a foreign company — still unusual at the time — looked like the
+remote work for a foreign company, still unusual at the time, looked like the
 obvious way to get there. So I went after exactly that.
 
 ## Four years on the other side of the clock
 
 What I found was a company selling trading technology to brokers on the Asian
-forex market — its own platforms, and white-label solutions built on MetaTrader
-4 and 5. The headquarters was in Singapore. I worked remotely from Europe in a
+forex market: its own platforms, and white-label solutions built on MetaTrader 4
+and 5. The headquarters was in Singapore. I worked remotely from Europe in a
 distributed team, with trips out to the office there.
 
 In 2015 that arrangement was still unusual, and nobody I knew had a playbook for
@@ -125,16 +125,16 @@ That is where uptime stopped being a number in a report for me. When a trading
 platform is down, somebody is losing money for every minute of it, and the
 amount is known. There is no negotiating with that and no explaining it away
 afterwards. It meant constant observability, being reachable, and getting things
-back up quickly rather than elegantly — and it is the origin of the 99.99% on my
-CV, which was never an engineering ambition. It was the business requirement,
-stated plainly.
+back up quickly rather than elegantly. It is the origin of the 99.99% on my CV,
+which was never an engineering ambition. It was the business requirement, stated
+plainly.
 
 Sitting in a European timezone turned out to be worth more than any of my
 technical arguments. My working day covered Asia's night, so I became the person
-on the other side of the clock — the one who could hold the system while the
-rest of the team slept, and hand it back in the morning. It was the first time I
-was valuable to a company for a reason that had nothing to do with how I wrote
-code, and it was a useful thing to learn early.
+on the other side of the clock, the one who could hold the system while the rest
+of the team slept and hand it back in the morning. It was the first time I was
+valuable to a company for a reason that had nothing to do with how I wrote code,
+and it was a useful thing to learn early.
 
 What I did not expect from that job was a seat at the table. We sat with the
 owners of the company and worked out what to build next: which plugins, which
@@ -146,7 +146,7 @@ would now call product engineering I first did there, several years before I had
 a name for it.
 
 The responsibility came with it. I owned the codebase and the delivery cycle end
-to end, which is a great deal to carry — but it was never bare responsibility.
+to end, which is a great deal to carry, but it was never bare responsibility.
 The same conversation that handed me the work gave me a say in what the work
 was: what we needed, what we did not, and how it ought to be built. I did not
 realise at the time how unusual that combination is. I have been looking for it
@@ -165,26 +165,27 @@ decision clearly enough that other people could act on it without me, keeping
 the shape of the thing visible to everyone, and noticing early when someone was
 quietly stuck.
 
-The hardest engineering I have done was probably there too — attaching our own
-code to MetaTrader as plugins, across a C++/CLI boundary, on a platform that was
-never designed to be extended in the direction we were pushing it. Narrow
-constraints, tight performance requirements, and it had to stay up. It took a
-fair number of unorthodox solutions. I mention it because it is the exception
-that proves the rest of this page: that was a problem where the difficulty
-really was technical, and in ten years I have not met many others like it.
+The hardest engineering I have done was probably there too. It meant attaching
+our own code to MetaTrader as plugins, across a C++/CLI boundary, on a platform
+that was never designed to be extended in the direction we were pushing it.
+Narrow constraints, tight performance requirements, and it had to stay up. It
+took a fair number of unorthodox solutions. I mention it because it is the
+exception that proves the rest of this page: that was a problem where the
+difficulty really was technical, and in ten years I have not met many others
+like it.
 
 I left for reasons that had nothing to do with the work. My family and I wanted
 to move to Europe, and there was no version of that job which allowed it. So the
-decision was forced in one sense and entirely deliberate in another — a step I
-wanted for my career, taken on a timetable set by my life rather than by my
-career. We parted on good terms; I am still in touch with people there,
+decision was forced in one sense and entirely deliberate in another. It was a
+step I wanted for my career, taken on a timetable set by my life rather than by
+my career. We parted on good terms; I am still in touch with people there,
 including the owners. That is how I came to Germany.
 
 ## A domain that starts on a factory floor
 
 The move was a genuine jump. We went as a family to a country none of us knew,
 without the language. The work itself was in English, in an English-speaking
-company, so the job was never the problem — everything around the job was.
+company, so the job was never the problem. Everything around the job was.
 
 German working culture was the third one I had to learn, and it resembles
 neither of the others. The planning horizon is long, longer than I initially
@@ -192,21 +193,21 @@ thought was useful. There is much less improvisation and a great deal more
 commitment: what was agreed is what happens, and processes involving clients
 move slowly and through a lot of formality. After the Asian pace this took
 adjusting to, and my first months were harder than I expected. Once I stopped
-measuring it against what I was used to, I could see what it buys — decisions
+measuring it against what I was used to, I could see what it buys: decisions
 that hold, and plans that survive people leaving.
 
 The work was enterprise B2B for the automotive industry: event-driven backend
 services for a fleet management platform used by more than a hundred thousand
 customers across Europe and the US, and R&D on a data-intensive parts inventory
 system. Technically this was new ground for me. Microservices, messaging you can
-genuinely rely on, delivery guarantees that hold under load — I had to go and
+genuinely rely on, delivery guarantees that hold under load. I had to go and
 become properly expert in all of it.
 
 But what held me was the domain, and automotive is not an abstract one. It
 touches the physical world at every point: real vehicles, real equipment, real
 parts, real factories. More importantly, most of its logic predates software
 entirely. How parts are catalogued, how a repair kit is composed, which variants
-fit which vehicle configuration — all of that was worked out on factory floors
+fit which vehicle configuration. All of that was worked out on factory floors
 decades before anyone thought to digitise it, and all of it still runs the
 business today.
 
@@ -237,22 +238,22 @@ industry I work in now.
 I left when German automotive turned down. What began with the pandemic became
 structural, projects narrowed, and the direction of travel was not ambiguous.
 That makes twice in my career that I have left a company because the industry
-underneath it contracted — which has left me with a habit of watching the
-business around my work, not only the work. I would rather read that early and
-move deliberately than wait to be told.
+underneath it contracted. It has left me with a habit of watching the business
+around my work, not only the work. I would rather read that early and move
+deliberately than wait to be told.
 
 ## Starting from nothing
 
 Real estate was a deliberate choice and I had a head start on it. The reasoning
 was not complicated: European automotive was contracting, while property is
-stable, conservative, and — this is the part that interested me — still largely
-waiting to be automated. There is an enormous amount of work in it that nobody
-has got to yet, particularly in Europe. Conservative industries are where an
+stable, conservative, and still largely waiting to be automated. That last part
+is what interested me. There is an enormous amount of work in it that nobody has
+got to yet, particularly in Europe. Conservative industries are where an
 engineer can still make a difference big enough to see.
 
 The first thing I was handed was a fifteen-year-old system. It had been built
 with real originality: unconventional decisions, made by people solving a real
-problem with the tools available to them at the time. And it worked — which is
+problem with the tools available to them at the time. And it worked, which is
 the thing worth saying about legacy systems before anything else. It had run the
 business for fifteen years, which is more than most software ever achieves. What
 it was not was maintainable, or analysable. Working out why it did what it did
@@ -262,19 +263,18 @@ business to ask whether the rule I had found was still a rule.
 That project was never about moving code. It was about deciding what should
 survive: what stays as it is, what gets rewritten, what should be reconsidered
 entirely, and what quietly stopped being true years ago and has been executing
-ever since. Around that sat everything else — new cloud infrastructure inside an
+ever since. Around that sat everything else: new cloud infrastructure inside an
 enterprise environment, and a different way of working to go with it.
 
 Then the work changed shape again, and I became the founding engineer of a new
 global technology hub. That meant hiring the first engineers into my own team,
 standing the project up, and starting a new core domain from nothing.
 
-It is worth being precise about what that involves, because the title
-undersells it. Colliers is a real estate agency. It is not a software company.
-What we are building is, in effect, a software organisation inside one that has
-never needed to be one — with the engineering culture, standards and delivery
-practices that implies, in a place where none of that existed and none of it can
-be assumed.
+It is worth being precise about what that involves, because the title undersells
+it. Colliers is a real estate agency. It is not a software company. What we are
+building is, in effect, a software organisation inside one that has never needed
+to be one, with the engineering culture, standards and delivery practices that
+implies, in a place where none of that existed and none of it can be assumed.
 
 Almost nothing was decided, which sounds daunting and is actually the appeal. At
 that stage decisions have leverage they never have again: how the team works,
@@ -283,7 +283,7 @@ All of it is set in the first months and then inherited for years. I run the
 technical interviews, which has taught me more about what I value in engineers
 than any amount of reading.
 
-Day to day I work on the domain model — driving domain discovery with the
+Day to day I work on the domain model: driving domain discovery with the
 business, defining bounded contexts, and working with product owners and
 business analysts to turn what the business says into something precise enough
 to build from. Less writing code than deciding what should be written.
@@ -302,7 +302,7 @@ Enterprise code is rarely where the difficulty is. Most of it is
 straightforward, and these days a good deal of it writes itself. What no model
 can do for you is sit with the business and turn what they want into something a
 system can hold. That still takes domain-driven design, ontologies and patient
-business analysis — because the knowledge is not written down anywhere.
+business analysis, because the knowledge is not written down anywhere.
 
 Every project I have joined has had the same gap. There is no documentation, and
 everything that matters lives in the heads of a few people who are too busy to
@@ -314,8 +314,8 @@ In companies with a long history there is a second layer. Decisions taken
 fifteen or twenty years ago, when software was built quite differently, are
 still the core business logic of systems running today. The business has moved
 on; the system has not. My working belief is that software should reflect the
-current state of the business and change as it changes — and once the gap grows
-wide enough, rewriting stops being optional.
+current state of the business and change as it changes. Once the gap grows wide
+enough, rewriting stops being optional.
 
 But rewriting badly means carrying the same logic across to newer technology.
 The point is to go back to the business and ask again: what changed, what is no
@@ -326,7 +326,7 @@ to propose something different.
 
 That last part is where the job stops being purely technical. If you have seen
 how modern products work, you are often the person in the room best placed to
-say what will and will not hold up — and saying so is part of the work, not
+say what will and will not hold up. Saying so is part of the work, not
 overstepping it. It makes an engineer answerable for the product, not only for
 the service behind it.
 
@@ -337,15 +337,15 @@ years to build and another two to settle, by which point it is already behind
 the business it was meant to serve. Give it fifteen more and the gap is
 structural. It is worse when the system arrived as a boxed product or from an
 outside contractor: it never fitted exactly, and bending it further costs more
-than anyone wants to spend. Sometimes there is no active development at all —
-the thing was built once and has been maintained ever since.
+than anyone wants to spend. Sometimes there is no active development at all. The
+thing was built once and has been maintained ever since.
 
 None of this is unusual. It is the ordinary condition of enterprise software,
 and I have met some version of it on every project I have worked on.
 
 Diagnosing it is not the difficult part. Convincing the people who live with it
-is. Raising the subject is usually met with defensiveness — everything is fine,
-this is simply how it works — and not because anyone is being unreasonable.
+is. Raising the subject is usually met with defensiveness: everything is fine,
+this is simply how it works. That is not because anyone is being unreasonable.
 Habit is strong, and large organisations are conservative about their processes
 by design. One engineer, or one team, does not change that by being right.
 
@@ -364,7 +364,7 @@ a better one is the other half.
 ## Bringing AI into a place that did not ask for it
 
 I have spent much of the last year getting agentic workflows into an enterprise
-SDLC. None of this is settled practice yet — every company is feeling its way,
+SDLC. None of this is settled practice yet. Every company is feeling its way,
 and in a large one it moves slowly.
 
 The first obstacle is budget, and it is really a question of who is asking. When
@@ -388,9 +388,9 @@ the rule.
 What moved management was what moves any enterprise argument: demonstration,
 numbers, and somebody's own experience of the thing working. The framing that
 landed was competitive rather than technical. This is a change on the scale of
-DevOps becoming its own discipline, or the move to cloud and Kubernetes — the
-largest shift in how software gets built in fifteen years — and arriving late to
-it costs something.
+DevOps becoming its own discipline, or the move to cloud and Kubernetes. It is
+the largest shift in how software gets built in fifteen years, and arriving late
+to it costs something.
 
 ### What does not work
 
@@ -413,7 +413,7 @@ turns.
 I think the centre of gravity in this work is shifting away from code and
 towards specification: defining the domain, settling what a system should
 actually do, and talking to the people who know. How far that goes is still an
-open question, but in some places — startups especially — it is already the
+open question, but in some places, startups especially, it is already the
 present rather than the future.
 
 Two directions interest me, and they are further apart than they look.
@@ -423,11 +423,10 @@ great deal is still worth fixing. Real estate has turned out to be exactly that:
 old, careful, and full of things nobody has got to yet.
 
 The other is much smaller. I think one person can now cover the entire cycle for
-a small business or a narrow niche — gather the requirements, decide what is
-worth building, and ship it — because most of the mechanical work can be
-automated and what remains is the product judgement. That is the direction I take
-my own side projects in, and I expect it to become unremarkable rather than
-impressive.
+a small business or a narrow niche: gather the requirements, decide what is
+worth building, and ship it. Most of the mechanical work can be automated, and
+what remains is the product judgement. That is the direction I take my own side
+projects in, and I expect it to become unremarkable rather than impressive.
 
 Neither of them feels like a change of direction. It is closer to the thing I
 picked when I chose a degree that put economics next to software, and to what I
@@ -440,13 +439,13 @@ I am a father, and my family comes first. Berlin has been home for years now.
 
 Away from work I read a great deal of psychology. It began as a personal
 interest and stayed one, though the distance between it and the rest of this
-page is smaller than it looks — most of what I have written above is about
-people and the knowledge they carry without ever writing it down. In time I
-would like to build something in that field: tools for therapists, and for the
-people who go to see them.
+page is smaller than it looks. Most of what I have written above is about people
+and the knowledge they carry without ever writing it down. In time I would like
+to build something in that field: tools for therapists, and for the people who
+go to see them.
 
 The rest of my attention goes to the shift this page describes. Moving from
 writing code towards business analysis and product work means learning a
-different craft — event storming, requirement elicitation, the methods for
+different craft: event storming, requirement elicitation, the methods for
 turning what a business says into something precise enough to build. That is
 what I am reading and practising at the moment.
