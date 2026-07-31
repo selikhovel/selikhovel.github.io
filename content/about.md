@@ -222,9 +222,9 @@ that comes out the other end.
 
 This is where the sentence at the top of this page comes from. I do not want to
 overstate it, though: organising that logic in code took genuinely unorthodox
-approaches as well. The point is not that the code was easy. It is that the code
-was downstream of a much harder question, and getting the harder question wrong
-could not be fixed by writing the code better.
+approaches as well. My claim is narrower than that. The code sat downstream of a
+much harder question, and getting the harder question wrong could not be fixed
+by writing the code better.
 
 I stayed five and a half years, which is longer than I have stayed anywhere.
 Three projects in that time, and I carried each of them the whole distance:
@@ -290,9 +290,9 @@ to build from. Less writing code than deciding what should be written.
 
 That period taught me the thing I had been circling for a decade. Being good at
 building systems and being good at building the conditions in which systems get
-built are different skills, and the second one is not a promotion out of the
-first. It is a separate craft, and I had to learn it the same way I learned the
-first: badly at first, and in public.
+built are different skills. The second is a separate craft rather than a
+promotion out of the first, and I had to learn it the way I learned the first:
+badly, and in public.
 
 ## The code is the easy part
 

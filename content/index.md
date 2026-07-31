@@ -1,19 +1,19 @@
 ---
 title: Senior .NET Backend Engineer in Berlin
-description: Eugene Selikhov — Senior Backend Engineer in Berlin with 10+ years in .NET. Domain-driven design, event-driven architecture and greenfield platforms for Colliers, Mercedes-Benz and fintech.
+description: Eugene Selikhov is a Senior Backend Engineer in Berlin with 10+ years in .NET. Domain-driven design, event-driven architecture and greenfield platforms for Colliers, Mercedes-Benz and fintech.
 ---
 
 <img class="cv-avatar" src="avatar.webp" alt="Portrait of Eugene Selikhov" width="128" height="128" />
 
 # Eugene Selikhov
 
-**Senior Backend Engineer** · Berlin, Germany · German citizen — no work permit required · Open to relocation
+**Senior Backend Engineer** · Berlin, Germany · German citizen, no work permit required · Open to relocation
 
 [LinkedIn](https://www.linkedin.com/in/selikhovevgenii/) · [GitHub](https://github.com/selikhovel/)<span class="no-print"> · <a href="/cv.pdf" download>Download CV as PDF</a></span>
 
 ## Professional Summary
 
-Senior Backend Engineer with 10+ years of experience turning complex business domains into clean, scalable systems — from automotive parts variation logic to global real estate data platforms. Passionate about domain ownership and close business collaboration; deep expertise in DDD, event-driven architecture and modern .NET, with a proven track record of leading greenfield platforms, legacy modernisation and technical hiring. Actively adopting and introducing AI agentic development into engineering workflows.
+Senior Backend Engineer with 10+ years of experience turning complex business domains into clean, scalable systems, from automotive parts variation logic to global real estate data platforms. Passionate about domain ownership and close business collaboration; deep expertise in DDD, event-driven architecture and modern .NET, with a proven track record of leading greenfield platforms, legacy modernisation and technical hiring. Actively adopting and introducing AI agentic development into engineering workflows.
 
 ## Technical Skills
 

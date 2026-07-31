@@ -13,9 +13,8 @@ description: Products Eugene Selikhov has designed and shipped — the problem, 
 > `quartz.config.yaml`, once at least two entries below are real.
 
 Things I have designed and shipped, including work where the code is not
-public. For a product engineer the interesting part is rarely the repository —
-it is what the thing does, who it is for, and which calls were made along the
-way.
+public. For a product engineer the interesting part is rarely the repository. It
+is what the thing does, who it is for, and which calls were made along the way.
 
 ## What each entry should contain
 
