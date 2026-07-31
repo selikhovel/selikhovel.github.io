@@ -152,6 +152,19 @@ properly.
 dependency. Rendering the page caught a duplicated heading, an unreadable print
 palette and a collapsed grid column that were all invisible in the HTML.
 
+## Writing
+
+Pages here have to convince a recruiter reading closely, so prose that reads as
+model-drafted is a functional defect, not a matter of taste. The `prose-style`
+skill holds the house voice, the constructions that give a draft away, and
+`.claude/skills/prose-style/audit.mjs`, which measures them and exits non-zero
+when a page is over budget. Em dashes are the loudest tell and the budget for
+them in running prose is zero.
+
+The rule that carries the most weight is the cheapest one: never write a fact
+the user has not given you. Interview instead. A model with no material
+generalises, and generalisation is what reads as machine-written.
+
 ## Content workflow
 
 One branch, `main`; pushing deploys. Unfinished notes carry `draft: true` in
