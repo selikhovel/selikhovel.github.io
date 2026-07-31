@@ -37,15 +37,19 @@ configuration:
         tertiary: "#84a59d"
         highlight: rgba(143, 159, 169, 0.15)
         textHighlight: "#fff23688"
+      # Blue-slate rather than the stock near-black. The stock pair put 15:1
+      # between text and background, which glares, while its muted grey sat at
+      # 3.05 and barely cleared AA. This lifts the background and the muted
+      # tone, keeping body text at 13.7 and metadata at 5.4.
       darkMode:
-        light: "#161618"
-        lightgray: "#393639"
-        gray: "#646464"
-        darkgray: "#d4d4d4"
-        dark: "#ebebec"
-        secondary: "#7b97aa"
-        tertiary: "#84a59d"
-        highlight: rgba(143, 159, 169, 0.15)
+        light: "#1b212b"
+        lightgray: "#2f3947"
+        gray: "#8996a8"
+        darkgray: "#c4cedb"
+        dark: "#e8edf4"
+        secondary: "#93b8e0"
+        tertiary: "#8fbcae"
+        highlight: rgba(147, 184, 224, 0.12)
         textHighlight: "#b3aa0288"
 
 plugins:
