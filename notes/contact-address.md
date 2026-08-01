@@ -42,11 +42,41 @@ domain. If a domain gets bought for email anyway, it should carry the site too �
 running the CV on `github.io` while the email is on a personal domain is the
 worst of both.
 
-The cost of moving rises over time. Right now the site has no indexed pages and
-no inbound links, so a move costs nothing but a config change. Once the site
-ranks, moving means redirects and a ranking dip.
+An earlier version of this note argued that the cost of moving rises over time,
+and used that to make the purchase urgent. That looks wrong. GitHub Pages
+redirects `username.github.io` to the custom domain once one is configured for a
+user site, so the accumulated links and ranking follow the move rather than
+being stranded. Deferring the decision is cheap. What a move does cost is the
+GoatCounter history, which is tied to the hostname and starts again from zero.
+
+Treat that correction as unverified: it could not be checked from the machine
+that wrote it, because the proxy there refused `docs.github.com`. Confirm it at
+the point of moving, not now.
 
 ## Decision
 
-Not settled yet — see the open question in the site's task list. The fallback,
-if a decision is needed quickly and without spending, is a dedicated mailbox.
+Stay on `selikhovel.github.io`. No domain.
+
+The reasoning is that a domain buys very little for the goal this site actually
+has. For a backend engineer applying to companies, a `github.io` address reads
+as normal rather than cheap, and recruiters judge the page rather than its
+hostname. The place a domain would genuinely pay is cold outreach to small
+businesses, which is a direction rather than a present activity, and any product
+built for that would need its own name anyway rather than a surname.
+
+`selikhov.dev`, `selikhov.com` and `selikhov.xyz` are already taken, checked by
+DNS resolution. `.de` at around €6 a year was the option to take if one were
+being taken, both because German registrations do not inflate at renewal and
+because a `.de` reads well to a Berlin employer.
+
+Revisit only on a concrete trigger: outreach to small businesses under a
+personal name, or enough traffic to be worth protecting.
+
+## What this leaves
+
+Email is now the only part still open, and it is the blocking one: the site has
+no contact address at all, so the page cannot do the job it exists for.
+
+With no domain, the option is a dedicated free mailbox, kept separate from the
+personal address for the disposability reasons above. It needs to be created and
+then put on the CV, and it is the one real address that belongs in `content/`.
