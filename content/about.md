@@ -476,3 +476,11 @@ writing code towards business analysis and product work means learning a
 different craft: event storming, requirement elicitation, the methods for
 turning what a business says into something precise enough to build. That is
 what I am reading and practising at the moment.
+
+## If you got this far
+
+Then you have either a role in mind, a question, or a disagreement with
+something on this page. All three are worth an email, and the third one is the
+most welcome.
+
+<a class="contact-cta" href="mailto:eugene.selikhov.dev@gmail.com">Email me</a>

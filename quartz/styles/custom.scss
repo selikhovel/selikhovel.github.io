@@ -38,6 +38,34 @@
   }
 }
 
+// Writing is the action this site wants; LinkedIn and GitHub are fallbacks for
+// people who would rather not. Sitting the address in a row of equal links
+// buried it among them, so it gets button weight instead. The label is the
+// address itself, which keeps it selectable and keeps it in the printed CV
+// rather than needing a second copy elsewhere on the page.
+// Contrast against the palette is 8.7 in light mode and 7.8 in dark.
+.contact-cta {
+  display: inline-block;
+  padding: 0.35em 0.85em;
+  border-radius: 6px;
+  background-color: var(--secondary);
+  color: var(--light) !important;
+  font-weight: 600;
+  text-decoration: none !important;
+  transition: opacity 0.2s ease;
+
+  &:hover,
+  &:focus-visible {
+    opacity: 0.85;
+  }
+
+  // Quartz appends an external-link glyph to anything it treats as outbound.
+  // On a button it reads as decoration rather than information.
+  & .external-icon {
+    display: none;
+  }
+}
+
 @media print {
   // Quartz colours everything through custom properties, so overriding
   // `color` on the body alone leaves headings and metadata in their light
@@ -92,6 +120,15 @@
   a {
     color: #000 !important;
     text-decoration: none;
+  }
+
+  // The printed CV goes into applicant tracking systems, which read text and
+  // not styling. The address has to survive; the button around it should not.
+  .contact-cta {
+    background-color: transparent !important;
+    color: #000 !important;
+    padding: 0 !important;
+    font-weight: inherit !important;
   }
 
   // A section heading should not be orphaned at the foot of a page, and a

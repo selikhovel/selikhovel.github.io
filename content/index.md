@@ -93,3 +93,5 @@ Tech stack: C#, .NET Framework, MT4/MT5 plugins, WPF, SignalR, Rx.NET, C++/CLI i
 **Kaliningrad State Technical University** — Postgraduate Research, E-learning & Educational Assessment Tools, 2013–2014
 
 **Kaliningrad State Technical University** — MSc in Applied Information Technology in Economics, 2012
+
+<p class="no-print"><a class="contact-cta" href="mailto:eugene.selikhov.dev@gmail.com">Email me</a></p>
