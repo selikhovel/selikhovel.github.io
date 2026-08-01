@@ -8,13 +8,12 @@ configuration:
   enablePopovers: true
   # GoatCounter, chosen because it sets no cookies and stores no personal data,
   # so the site needs no consent banner. See notes/analytics.md for why that
-  # ruled out Google Analytics. Replace null with the block below, putting the
-  # site code from the GoatCounter dashboard in websiteId. A provider with no
-  # id only ships a script that never reports, so it stays null until then.
-  #   analytics:
-  #     provider: goatcounter
-  #     websiteId: <site code>
-  analytics: null
+  # ruled out Google Analytics, and for the one thing about this setup that is
+  # not yet verified: Quartz sets `no_onload`, which may also stop the script
+  # binding the `data-goatcounter-click` on the PDF link.
+  analytics:
+    provider: goatcounter
+    websiteId: selikhovel
   locale: en-US
   # No protocol and no trailing slash. Quartz builds absolute URLs as
   # `https://${baseUrl}`, so a protocol here corrupts every sitemap entry,

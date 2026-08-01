@@ -65,11 +65,32 @@ would show whether visitors leave for LinkedIn rather than reading. Those are
 plain markdown links today and would have to become HTML, so it was left alone
 until there is a reason.
 
+## Unverified: whether the PDF click is actually bound
+
+Quartz emits `window.goatcounter = { no_onload: true }` before loading
+`count.js`, then counts the pageview itself and recounts on the `nav` event so
+that SPA navigation registers. Page views are therefore certain to work.
+
+The click tracking is not certain. GoatCounter binds `data-goatcounter-click`
+inside the routine it runs on page load, and `no_onload` exists precisely to
+suppress that routine. If binding lives there, the attribute on the PDF link
+never gets bound and downloads silently count as zero, which is worse than not
+measuring them, because zero looks like an answer.
+
+This could not be checked from the machine that set it up: the agent proxy
+denies both `gc.zgo.at` and `goatcounter.com`, so neither the script nor the
+documentation could be read.
+
+Check it empirically instead. Download the PDF from the live site, then look for
+a `cv-pdf` path in the GoatCounter dashboard. If it never appears while page
+views do, the binding is the reason, and the fix is one line: call
+`goatcounter.bind_events()` after the script loads, and again on `nav`, since
+Quartz replaces the DOM on navigation. Doing that means either a small local
+plugin or an upstream edit, since the snippet lives in
+`quartz/plugins/emitters/componentResources.ts`.
+
 ## Still open
 
-The account itself. Nothing reports until a site is created in GoatCounter and
-its site code goes into `analytics.websiteId` in `quartz.config.yaml`.
-
-Worth deciding at the same time as the domain question in
-`notes/contact-address.md`: analytics tied to `selikhovel.github.io` start again
-from zero if the site later moves to its own domain.
+Worth deciding alongside the domain question in `notes/contact-address.md`.
+Statistics are tied to `selikhovel.github.io` and start again from zero if the
+site later moves to its own domain.
