@@ -138,6 +138,15 @@ page leaves the graph asserting the old fact, and the build is silent about the
 disagreement. Change both, then read the emitted JSON-LD back out of
 `public/index.html` rather than trusting the config.
 
+**`cdnCaching: true` sends every visitor to Google.** The name reads like a
+caching optimisation, and Quartz ships it on. What it does is link the theme's
+fonts straight from `fonts.googleapis.com`, so every browser that opens a page
+discloses its address to Google. For a site run from Germany that is the Munich
+judgment of 2022 and the warning letters that followed it. Set it to `false`,
+which makes the build download the fonts and serve them from `static/fonts`
+instead. That build step needs network access to Google Fonts, so an environment
+that blocks it will fail where CI succeeds.
+
 **Those `person` fields are typed, not free text.** `nationality` is wrapped as a
 schema.org `Country`, so its value has to name a place. A status put there ("EU
 citizen") emits a country by that name and nothing warns; the place name goes in

@@ -26,7 +26,13 @@ configuration:
   defaultDateType: modified
   theme:
     fontOrigin: googleFonts
-    cdnCaching: true
+    # false means the fonts are fetched at build time and served from this
+    # domain. Left at Quartz's default of true, every visitor's browser calls
+    # Google instead, which discloses their address to it. A Munich court
+    # awarded damages over exactly that in 2022 and it started a wave of German
+    # warning letters. The build needs network access to Google Fonts for this,
+    # which CI has.
+    cdnCaching: false
     typography:
       header: Schibsted Grotesk
       body: Source Sans Pro
@@ -247,12 +253,16 @@ plugins:
   # Disabled: on a two-level site "Home > blog" repeats the nav directly above it.
   - source: ./node_modules/@quartz-community/breadcrumbs
     enabled: false
+  # The privacy notice sits here rather than in the top nav because German
+  # practice asks for it to be reachable from every page in one click, and the
+  # top nav is for the three pages a visitor came to read.
   - source: ./node_modules/@quartz-community/footer
     enabled: true
     options:
       links:
         LinkedIn: https://www.linkedin.com/in/selikhovevgenii/
         GitHub: https://github.com/selikhovel/
+        Privacy: /privacy
   - source: ./node_modules/@quartz-community/spacer
     enabled: true
     options: {}
