@@ -72,6 +72,32 @@ because a `.de` reads well to a Berlin employer.
 Revisit only on a concrete trigger: outreach to small businesses under a
 personal name, or enough traffic to be worth protecting.
 
+## No contact form
+
+Asked for and declined. The reasons are worth keeping, because the idea is an
+obvious one to have again.
+
+Recruiters do not use forms. They copy an address into their mail client or
+their tracking system, because they need to attach a job description, copy a
+colleague, and keep the exchange in one thread. A form takes all of that away
+from the one visitor the site is built for.
+
+GitHub Pages is static, so a form means a third-party processor holding the
+sender's details. For an audience in the EU that wants disclosure at minimum,
+which reintroduces from another direction exactly the friction the cookieless
+analytics decision was avoiding. A public form also collects bot spam within
+weeks, and the usual answer to that is a captcha, which is third-party tracking
+again.
+
+A form also gives the sender no copy of what they wrote and no evidence it
+arrived. Email gives both by default, and `mailto` plus a visible address covers
+the two cases that matter: a phone opens the mail app, and a desktop without a
+mail client can still select the address.
+
+Revisit if the small-business direction starts and non-technical visitors turn
+up, since a form genuinely is easier for someone who does not live in a mail
+client. That is a different audience and probably a different page.
+
 ## What this leaves
 
 Email is now the only part still open, and it is the blocking one: the site has

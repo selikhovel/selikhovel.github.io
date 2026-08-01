@@ -95,6 +95,15 @@ the duplicate and gives the section prose instead of a file count.
 renders the frontmatter title as the page heading; a heading in the body shows up
 as a second one.
 
+**Never make an email address or a bare URL the visible text inside a raw
+`<a>`.** The markdown pipeline auto-links both wherever they appear in text,
+including inside hand-written HTML, and anchors cannot nest. The parser resolves
+that by splitting the element: `<a class="x" href="mailto:…">someone@example.com</a>`
+emits an empty `<a class="x">` carrying only the external-link glyph, followed by
+a separate plain link holding the text. The build succeeds and the page shows a
+styled box with an arrow in it and nothing else. Give the anchor a worded label
+and keep the address in ordinary markdown elsewhere on the page.
+
 ### Configuration
 
 **`baseUrl` takes no protocol and no trailing slash.** Quartz builds absolute
