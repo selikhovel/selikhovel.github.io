@@ -6,8 +6,14 @@ configuration:
   pageTitleSuffix: " · Eugene Selikhov"
   enableSPA: true
   enablePopovers: true
-  # Set to a umami/goatcounter websiteId once the account exists. Leaving a
-  # provider configured without an id only ships a script that never reports.
+  # GoatCounter, chosen because it sets no cookies and stores no personal data,
+  # so the site needs no consent banner. See notes/analytics.md for why that
+  # ruled out Google Analytics. Replace null with the block below, putting the
+  # site code from the GoatCounter dashboard in websiteId. A provider with no
+  # id only ships a script that never reports, so it stays null until then.
+  #   analytics:
+  #     provider: goatcounter
+  #     websiteId: <site code>
   analytics: null
   locale: en-US
   # No protocol and no trailing slash. Quartz builds absolute URLs as
