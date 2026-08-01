@@ -9,7 +9,9 @@ description: Eugene Selikhov is a Senior Backend Engineer in Berlin with 10+ yea
 
 **Senior Backend Engineer** · Berlin, Germany · EU citizen · Open to relocation
 
-[LinkedIn](https://www.linkedin.com/in/selikhovevgenii/) · [GitHub](https://github.com/selikhovel/)<span class="no-print"> · <a href="/cv.pdf" download data-goatcounter-click="cv-pdf">Download CV as PDF</a></span>
+[eugene.selikhov.dev@gmail.com](mailto:eugene.selikhov.dev@gmail.com) · [LinkedIn](https://www.linkedin.com/in/selikhovevgenii/) · [GitHub](https://github.com/selikhovel/)<span class="no-print"> · <a href="/cv.pdf" download data-goatcounter-click="cv-pdf">Download CV as PDF</a></span>
+
+**Looking for** · Roles where the domain is mine to own and the product responsibility comes with it, in an enterprise product or a small team building something new.
 
 ## Professional Summary
 
