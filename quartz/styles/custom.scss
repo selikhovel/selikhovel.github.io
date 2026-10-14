@@ -30,11 +30,24 @@
   shape-outside: circle();
 }
 
+// On a phone the portrait used to sit alone on its own row, under a site title
+// and above an H1 that both said the same name, so the summary started below
+// the fold. Kept floated, at a size that leaves the name room beside it.
 @media (max-width: 600px) {
   .cv-avatar {
-    float: none;
-    display: block;
-    margin: 0 0 1rem 0;
+    width: 84px;
+    height: 84px;
+    margin: 0 0 0.5rem 1rem;
+  }
+}
+
+// The CV opens with its own H1 carrying the name, so the site title above it
+// on a phone is the same words a second time. Desktop keeps it: there it sits
+// in the sidebar and costs no vertical space. `data-slug` is morphed along with
+// the body on SPA navigation, so this follows the page rather than the entry.
+@media (max-width: 800px) {
+  body[data-slug="index"] .page-title {
+    display: none;
   }
 }
 
@@ -122,6 +135,16 @@
     text-decoration: none;
   }
 
+  // "LinkedIn" alone is a dead word on paper, and ATS parsers read the text
+  // layer rather than link annotations. The address goes in after the label.
+  article a.external[href^="https://"]::after {
+    content: " (" attr(href) ")";
+  }
+
+  article a.external .external-icon {
+    display: none;
+  }
+
   // The printed CV goes into applicant tracking systems, which read text and
   // not styling. The address has to survive; the button around it should not.
   .contact-cta {
@@ -148,5 +171,26 @@
 
   article {
     font-size: 0.92rem;
+  }
+
+  // The screen line height (about 1.75) and paragraph gaps ran the CV to a
+  // third page, where German recruiters expect two. Print gets document
+  // spacing instead of reading spacing; the type size stays as it was.
+  article p,
+  article li {
+    line-height: 1.35;
+  }
+
+  article p,
+  article ul {
+    margin: 0.3em 0;
+  }
+
+  article h2 {
+    margin: 0.8em 0 0.3em;
+  }
+
+  article h3 {
+    margin: 0.7em 0 0.15em;
   }
 }

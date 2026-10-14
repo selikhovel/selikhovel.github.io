@@ -1,6 +1,7 @@
 ---
 title: Senior backend engineer moving into product
 description: Eugene Selikhov is a senior backend engineer in Berlin, ten years into hard domains from nuclear plant construction to global real estate, and moving towards product engineering.
+socialImage: cv-card.png
 ---
 
 I am a senior backend engineer in Berlin, ten years in, and increasingly a

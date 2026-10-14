@@ -53,6 +53,7 @@ npm run check        # tsc + prettier, same as CI
 npx quartz build --serve
 npx tsx ./scripts/make-avatar.mts <photo>   # regenerates content/avatar.webp
 npx tsx ./scripts/make-icon.mts             # regenerates the ES monogram
+npx tsx ./scripts/make-social-card.mts      # regenerates the CV link preview
 ```
 
 ## Layout
@@ -62,6 +63,8 @@ npx tsx ./scripts/make-icon.mts             # regenerates the ES monogram
 - `plugins/seo/` — local plugin: `rel=canonical` and the schema.org `Person`
   graph. Email is deliberately excluded from that graph.
 - `plugins/nav/` — local component plugin: the site-wide navigation.
+- `plugins/click-events/` — local plugin: counts email, PDF, LinkedIn and
+  GitHub clicks as GoatCounter events.
 - `scripts/` — plugin linking, PDF rendering, image generation.
 - `notes/` — decisions and their reasoning. Public, not published.
 - `quartz/` — upstream Quartz. Do not edit except `styles/custom.scss`; the fork
@@ -152,6 +155,12 @@ schema.org `Country`, so its value has to name a place. A status put there ("EU
 citizen") emits a country by that name and nothing warns; the place name goes in
 the graph and the status belongs in the CV line instead.
 
+**The CV link preview is a hand-made PNG, not the generated card.** The
+og-image plugin only emits WebP, which LinkedIn does not show, so `index.md` and
+`about.md` set `socialImage: cv-card.png`. That file is rendered by
+`scripts/make-social-card.mts` and does not follow the CV: after changing the
+job title or the portrait, re-run the script.
+
 ### Styling
 
 **The theme palette is emitted after `custom.scss`.** Overriding a colour
@@ -171,6 +180,12 @@ until `npm run install-plugins` has run. CI does this in a separate step.
 **Windows cannot create symlinks without elevation.** `scripts/link-plugins.mts`
 uses junctions there instead; Node reports them as symbolic links, so Quartz's
 loader leaves them alone rather than deleting and recreating them mid-build.
+
+**The PDF fits two pages with almost nothing to spare.** The print spacing in
+`custom.scss` and the 12mm page margins in `scripts/build-pdf.mts` were tuned
+until Education landed on page two. Adding a role or a few bullet lines pushes
+it to a third page, which nothing reports. Count pages after any CV edit:
+`grep -a -o '/Count [0-9]*' public/cv.pdf`.
 
 ### Verifying
 

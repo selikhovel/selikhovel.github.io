@@ -143,6 +143,12 @@ plugins:
         alumniOf:
           - Kaliningrad State Technical University
 
+  # Local plugin: counts email, PDF, LinkedIn and GitHub clicks as GoatCounter
+  # events. See plugins/click-events/index.js for why not data-goatcounter-click.
+  - source: ./plugins/click-events
+    enabled: true
+    order: 80
+
   # --- filters ---
   # Unfinished notes stay in the vault but out of the build via `draft: true`.
   - source: ./node_modules/@quartz-community/remove-draft

@@ -32,7 +32,8 @@ try {
     path: target,
     format: "A4",
     printBackground: false,
-    margin: { top: "16mm", bottom: "16mm", left: "16mm", right: "16mm" },
+    // 12mm top and bottom keeps the CV to two A4 pages; see the print styles.
+    margin: { top: "12mm", bottom: "12mm", left: "16mm", right: "16mm" },
   })
   const size = (fs.statSync(target).size / 1024).toFixed(0)
   console.log(`Wrote public/cv.pdf (${size} KB)`)

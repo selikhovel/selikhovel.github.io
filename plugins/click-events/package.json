@@ -1,0 +1,15 @@
+{
+  "name": "quartz-plugin-click-events",
+  "version": "1.0.0",
+  "description": "Counts clicks on the site's contact links and the PDF as GoatCounter events.",
+  "type": "module",
+  "main": "index.js",
+  "private": true,
+  "quartz": {
+    "name": "click-events",
+    "displayName": "Click events",
+    "category": "transformer",
+    "version": "1.0.0",
+    "description": "Counts clicks on email, LinkedIn, GitHub and the CV PDF as GoatCounter events."
+  }
+}
