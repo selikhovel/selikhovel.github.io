@@ -16,7 +16,9 @@ socialImage: cv-card.png
 
 ## Professional Summary
 
-Ten years of backend work in domains that are hard to model, from nuclear plant construction to parts logic covering every Mercedes-Benz model. Now founding engineer of the Colliers Global Tech Hub, a team of about twenty. I own the core domain model, and most of that work happens with the business before any code. I also set the hiring bar, with around 50 interviews for Senior and Principal roles. I built the team's agentic delivery cycle on Gemini, spec-driven from requirements to deploy, and introduced it bottom-up. It helped most where we were weakest: requirements and ticket refinement.
+Ten years of backend work in domains that are hard to model, from nuclear plant construction to parts logic covering every Mercedes-Benz model. Now founding engineer of the Colliers Global Tech Hub, a team of about twenty. I own the core domain model, and most of that work happens with the business before any code. I also set the hiring bar, with around 50 interviews for Senior and Principal roles.
+
+I built the team's agentic delivery cycle on Gemini, spec-driven from requirements to deploy, and introduced it bottom-up. It helped most where we were weakest: requirements and ticket refinement.
 
 ## Technical Skills
 
