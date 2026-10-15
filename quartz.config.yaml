@@ -2,7 +2,7 @@
 configuration:
   pageTitle: Eugene Selikhov
   # Appended to every page's <title>. The CV page sets a role-first frontmatter
-  # title so the tab reads "Senior .NET Backend Engineer | Berlin · Eugene Selikhov".
+  # title so the tab reads "Senior Backend & Product Engineer in Berlin · Eugene Selikhov".
   pageTitleSuffix: " · Eugene Selikhov"
   enableSPA: true
   enablePopovers: true
@@ -117,7 +117,7 @@ plugins:
     options:
       person:
         name: Eugene Selikhov
-        jobTitle: Senior Backend Engineer
+        jobTitle: Senior Backend & Product Engineer
         locality: Berlin
         country: DE
         # Wrapped as schema.org Country by the seo plugin, so this has to be the

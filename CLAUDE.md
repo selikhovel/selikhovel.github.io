@@ -38,10 +38,16 @@ the garden chrome (explorer, graph) via `condition: not-index`, and why SEO
 details — canonical URLs, structured data, titles — are treated as functionality
 rather than polish.
 
-The positioning is a bridge: the title stays "Senior Backend Engineer", because
-that is what recruiters search for and what ten years of history supports, while
-the product-engineering direction is shown through the About page and project
-write-ups rather than claimed in a job title.
+The headline is "Senior Backend & Product Engineer", with no stack in it. The
+target is Principal, Product Engineer and AI-first roles, so ".NET" stays in the
+skills list and out of the title. "Backend Engineer" stays because recruiters
+search for it and ten years of history supports it. "Principal" is not claimed:
+every past role says Senior, and the level is shown by scope instead, through
+the hub, the hiring bar and the interviews for Principal roles. The headline
+appears in four places that must agree: the line under the name and the
+frontmatter title in `content/index.md`, `person.jobTitle` in
+`quartz.config.yaml`, and `scripts/make-social-card.mts`, which has to be
+re-run.
 
 ## Commands
 

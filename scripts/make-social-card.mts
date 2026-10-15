@@ -63,8 +63,9 @@ const html = `<!doctype html>
       }
       .role {
         margin-top: 20px;
-        font-size: 44px;
+        font-size: 38px;
         font-weight: 600;
+        white-space: nowrap;
         color: ${ACCENT};
       }
       .detail {
@@ -83,7 +84,7 @@ const html = `<!doctype html>
     <img src="data:image/webp;base64,${avatar}" alt="" />
     <div>
       <h1>Eugene Selikhov</h1>
-      <p class="role">Senior .NET Backend Engineer</p>
+      <p class="role">Senior Backend &amp; Product Engineer</p>
       <p class="detail">Berlin · 10+ years · Domain-driven design</p>
       <p class="site">selikhovel.github.io</p>
     </div>

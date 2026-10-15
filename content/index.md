@@ -1,6 +1,6 @@
 ---
-title: Senior .NET Backend Engineer in Berlin
-description: Eugene Selikhov is a Senior Backend Engineer in Berlin with 10+ years in .NET. Domain-driven design, event-driven architecture and greenfield platforms for Colliers, Mercedes-Benz and fintech.
+title: Senior Backend & Product Engineer in Berlin
+description: Eugene Selikhov is a Senior Backend & Product Engineer in Berlin with 10+ years in hard domains. Domain-driven design, agentic delivery and greenfield platforms for Colliers, Mercedes-Benz and fintech.
 socialImage: cv-card.png
 ---
 
@@ -8,7 +8,7 @@ socialImage: cv-card.png
 
 # Eugene Selikhov
 
-**Senior Backend Engineer** · Berlin, Germany · EU citizen · Open to relocation
+**Senior Backend & Product Engineer** · Berlin, Germany · EU citizen · Open to relocation
 
 [eugene.selikhov.dev@gmail.com](mailto:eugene.selikhov.dev@gmail.com) · [LinkedIn](https://www.linkedin.com/in/selikhovevgenii/) · [GitHub](https://github.com/selikhovel/)<span class="no-print"> · <a href="/cv.pdf" download="Eugene-Selikhov-CV.pdf">Download CV as PDF</a></span>
 
@@ -16,7 +16,7 @@ socialImage: cv-card.png
 
 ## Professional Summary
 
-Senior Backend Engineer with 10+ years of experience turning complex business domains into clean, scalable systems, from automotive parts variation logic to global real estate data platforms. Passionate about domain ownership and close business collaboration; deep expertise in DDD, event-driven architecture and modern .NET, with a proven track record of leading greenfield platforms, legacy modernisation and technical hiring. Actively adopting and introducing AI agentic development into engineering workflows.
+Ten years of backend work in domains that are hard to model, from nuclear plant construction to parts logic covering every Mercedes-Benz model. Now founding engineer of the Colliers Global Tech Hub, a team of about twenty. I own the core domain model, and most of that work happens with the business before any code. I also set the hiring bar, with around 50 interviews for Senior and Principal roles. I built the team's agentic delivery cycle on Gemini, spec-driven from requirements to deploy, and introduced it bottom-up. It helped most where we were weakest: requirements and ticket refinement.
 
 ## Technical Skills
 
