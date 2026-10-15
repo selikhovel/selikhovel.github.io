@@ -40,8 +40,8 @@ Tech stack: ASP.NET Core, .NET 10, Kafka, PostgreSQL
 
 - Founding engineer of the Global Tech Hub; led initial team setup, establishing engineering workflows, delivery processes and onboarding from the ground up.
 - Lead engineer for the core domain product; driving domain discovery in close collaboration with business stakeholders to define bounded contexts and the domain model following DDD practices.
-- Organised and led technical interviews for backend engineer candidates, owning the hiring bar for the team.
-- Championed Gemini and Google Cloud AI adoption; demonstrated concrete benefits to navigate organisational resistance, integrated agentic workflows into the SDLC, and established team AI tooling standards and collaboration culture.
+- Ran around 50 technical interviews for Senior and Principal roles and set the team's hiring bar.
+- Built the team's agentic SDLC on Gemini from scratch and introduced it bottom-up: spec-driven from requirements to deploy, with skills, hooks, MCP and AI review in CI. Delivery got faster under quality control; ticket refinement, the weakest point, improved most.
 
 ### Senior Backend Engineer — Colliers International Germany
 
@@ -49,7 +49,7 @@ Tech stack: ASP.NET Core, .NET 10, Kafka, PostgreSQL
 
 Tech stack: .NET 9, ASP.NET Core, Azure, PostgreSQL, Docker, Terraform
 
-- Led backend development of a new enterprise analytics platform from scratch; owned the full backend architecture, domain model and database schema.
+- Led backend development of a new global analytics platform from scratch; owned the full backend architecture, domain model and database schema.
 - Reverse-engineered a 15-year-old legacy system through deep domain analysis; redesigned the domain model from business rules extracted from the legacy codebase, delivering a zero-disruption migration.
 - Defined CI/CD pipelines with DevOps and built delivery processes and rituals for a newly formed team.
 
@@ -61,7 +61,7 @@ Tech stack: .NET Core, ASP.NET Core, EF Core, PostgreSQL, RabbitMQ, Docker, GitL
 
 - Developed event-driven backend services for a B2B fleet management platform serving 100,000+ customers across Europe and the US.
 - Led R&D of a data-intensive automotive inventory system (modular monolith); implemented CQRS, MediatR and DDD patterns throughout.
-- Took technical ownership of automotive repair kit and parts variation logic; led business analysis with stakeholders, resolved complex catalogue rules across vehicle configurations and drove third-party data ingestion design.
+- Took technical ownership of automotive repair kit and parts variation logic; led business analysis with stakeholders, resolved complex catalogue rules across every Mercedes-Benz model and drove third-party data ingestion design.
 - Optimised critical SQL queries and backend algorithms, reducing API response times below SLA thresholds; drove cross-team technical alignment.
 
 ### Senior Backend Engineer — Broctagon Solutions Ltd.
@@ -70,7 +70,7 @@ Tech stack: .NET Core, ASP.NET Core, EF Core, PostgreSQL, RabbitMQ, Docker, GitL
 
 Tech stack: C#, .NET Framework, MT4/MT5 plugins, WPF, SignalR, Rx.NET, C++/CLI interop, REST API, Angular, AWS
 
-- Built high-availability REST APIs for desktop, web and mobile trading apps achieving 99.99% uptime.
+- Built high-availability REST APIs for desktop, web and mobile trading apps, white-labelled by about a hundred brokers, at 99.99% uptime.
 - Automated risk management workflows; led technical staff to deliver mission-critical features to tight deadlines; managed AWS infrastructure.
 
 ### .NET Developer — Neolant-Tenax Ltd.
