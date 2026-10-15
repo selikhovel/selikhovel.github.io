@@ -8,7 +8,8 @@ tags:
 socialImage: cv-card.png
 ---
 
-In recent years, the Result pattern has gained popularity as an alternative approach of managing error cases, particularly in languages like F#, Go and Rust, and is now increasingly applied in C# applications. In this article I would like to explore the Result pattern, discuss its implementations, and compare it with the traditional exception-based error handling in .NET C#.
+F#, Go and Rust treat an error as a value to return rather than something to throw, and the idea has been spreading into C#. This post covers how to implement the Result pattern in .NET and how it compares with exceptions. The short version: it earns its place in a narrow scope, and outside it mostly adds boilerplate.
+
 ## What's the problem with a good old exception?
 
 The general problem is:
