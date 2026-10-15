@@ -140,6 +140,9 @@ plugins:
           - Microservices
           - PostgreSQL
           - Kafka
+          - Product Engineering
+          - Agentic Software Development
+          - Spec-Driven Development
         alumniOf:
           - Kaliningrad State Technical University
 

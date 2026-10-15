@@ -12,7 +12,7 @@ socialImage: cv-card.png
 
 [eugene.selikhov.dev@gmail.com](mailto:eugene.selikhov.dev@gmail.com) · [LinkedIn](https://www.linkedin.com/in/selikhovevgenii/) · [GitHub](https://github.com/selikhovel/)<span class="no-print"> · <a href="/cv.pdf" download="Eugene-Selikhov-CV.pdf">Download CV as PDF</a></span>
 
-**Looking for** · Roles where the domain is mine to own and the product responsibility comes with it, in an enterprise product or a small team building something new.
+**Looking for** · Principal, product engineering or AI-first roles where the domain is mine to own and the product responsibility comes with it, in an enterprise product or a small team building something new.
 
 ## Professional Summary
 
@@ -22,13 +22,14 @@ Ten years of backend work in domains that are hard to model, from nuclear plant 
 
 **Backend & Architecture** — C#, .NET Core, .NET 9, .NET 10, ASP.NET Core, Web API, EF Core, Microservices, Modular Monolith, Clean Architecture, CQRS, MediatR, DDD, TDD
 
+**AI-First Development** — Agentic SDLC, spec-driven development, Gemini, MCP, agent skills and hooks, AI code review in CI
+
 **Data & Messaging** — PostgreSQL, MongoDB, Redis, RabbitMQ, Kafka
 
 **Cloud & DevOps** — Azure, AWS, Docker, Terraform, GitLab CI/CD, Git
 
 **Practices** — Unit & Integration Testing, Agile / Scrum, SDLC
 
-**AI & Developer Tooling** — AI-assisted and agentic development, Gemini (Google Cloud AI ecosystem), AI tooling adoption and team enablement
 
 ## Work Experience
 

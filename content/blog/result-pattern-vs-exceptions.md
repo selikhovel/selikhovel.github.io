@@ -5,6 +5,7 @@ tags:
   - csharp
   - dotnet
   - architecture
+socialImage: cv-card.png
 ---
 
 In recent years, the Result pattern has gained popularity as an alternative approach of managing error cases, particularly in languages like F#, Go and Rust, and is now increasingly applied in C# applications. In this article I would like to explore the Result pattern, discuss its implementations, and compare it with the traditional exception-based error handling in .NET C#.

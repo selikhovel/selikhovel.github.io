@@ -1,6 +1,6 @@
 ---
-title: Senior backend engineer moving into product
-description: Eugene Selikhov is a senior backend engineer in Berlin, ten years into hard domains from nuclear plant construction to global real estate, and moving towards product engineering.
+title: Senior backend and product engineer
+description: Eugene Selikhov is a senior backend and product engineer in Berlin, ten years into hard domains from nuclear plant construction to global real estate, now bringing agentic development into an enterprise.
 socialImage: cv-card.png
 ---
 
@@ -405,6 +405,13 @@ landed was competitive rather than technical. This is a change on the scale of
 DevOps becoming its own discipline, or the move to cloud and Kubernetes. It is
 the largest shift in how software gets built in fifteen years, and arriving late
 to it costs something.
+
+At the hub that meant building a harness from scratch on Gemini. Development is
+spec-driven, and agents carry the work from requirements to deployment, through
+skills, hooks, MCP servers and an AI review step in CI. Delivery got faster
+without giving up control over quality. The largest gain was not in the code at
+all. It was in requirements gathering and ticket refinement, which had been the
+most painful part of our process.
 
 ### What does not work
 
